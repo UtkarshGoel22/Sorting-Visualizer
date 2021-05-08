@@ -7,6 +7,13 @@ arraySize.addEventListener("input", ()=> {
     createNewArray(parseInt(arraySize.value));
 })
 
+// Select sorting speed (slider input) from DOM
+let sortSpeed = document.querySelector("#sort_speed");
+
+sortSpeed.addEventListener("input", ()=> {
+    console.log(sortSpeed.value, typeof(sortSpeed.value));
+})
+
 // Array to store randomly generated numbers
 let array = [];
 
