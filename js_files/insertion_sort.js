@@ -1,5 +1,5 @@
 async function insertionSort() {
-    console.log("Inside insertionSort()");
+    // console.log("Inside insertionSort()");
     const arr = document.querySelectorAll(".bar");
     for(let i = 1; i < arr.length; i++) {
         arr[i].style.background = "blue";
