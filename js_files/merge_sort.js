@@ -69,13 +69,12 @@ async function merge(arr, l, mid, r) {
 
 async function mergeSort(arr, l, r) {
     // console.log("Inside mergeSort()");
-    if(l >= r) {
-        return;
+    if(l < r) {
+        let mid = Math.floor((l + r) / 2);
+        await mergeSort(arr, l, mid);
+        await mergeSort(arr, mid+1, r);
+        await merge(arr, l, mid, r);
     }
-    let mid = Math.floor((l + r) / 2);
-    await mergeSort(arr, l, mid);
-    await mergeSort(arr, mid+1, r);
-    await merge(arr, l, mid, r);
 }
 
 const mergeSortBtn = document.querySelector(".mergeSort");

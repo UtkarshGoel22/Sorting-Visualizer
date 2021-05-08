@@ -21,7 +21,7 @@ function waitForMe(millisec) {
 }
 
 // Default input for waitForMe() 260ms
-let delay = 260;
+let delay = 60;
 
 // Select sorting speed (slider input) from DOM
 let sortSpeed = document.querySelector("#sort_speed");
@@ -30,6 +30,7 @@ let sortSpeed = document.querySelector("#sort_speed");
 sortSpeed.addEventListener("input", ()=> {
     // console.log(sortSpeed.value, typeof(sortSpeed.value));
     delay = 320 - parseInt(sortSpeed.value); 
+    // console.log(delay);
 })
 
 // Array to store randomly generated numbers
