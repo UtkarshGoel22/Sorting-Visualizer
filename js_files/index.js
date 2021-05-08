@@ -1,3 +1,11 @@
+// swap function util for sorting algorithms takes input of 2 DOM elements with .style.height feature
+function swap(a, b) {
+    // console.log('In swap()');
+    let temp = a.style.height;
+    a.style.height = b.style.height;
+    b.style.height = temp;  
+}
+
 // Select array size (slider input) from DOM
 let arraySize = document.querySelector("#arr_sz");
 
@@ -7,11 +15,21 @@ arraySize.addEventListener("input", ()=> {
     createNewArray(parseInt(arraySize.value));
 })
 
+// Used in asyn function so that we can do animations of sorting, takes input time in ms (1000 = 1s)
+function waitForMe(millisec) {
+    return new Promise(resolve => setTimeout(resolve, millisec));
+}
+
+// Default input for waitForMe() 260ms
+let delay = 260;
+
 // Select sorting speed (slider input) from DOM
 let sortSpeed = document.querySelector("#sort_speed");
 
+// Event listener to update delay time.
 sortSpeed.addEventListener("input", ()=> {
-    console.log(sortSpeed.value, typeof(sortSpeed.value));
+    // console.log(sortSpeed.value, typeof(sortSpeed.value));
+    delay = 320 - parseInt(sortSpeed.value); 
 })
 
 // Array to store randomly generated numbers
