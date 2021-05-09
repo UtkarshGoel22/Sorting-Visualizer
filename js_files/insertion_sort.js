@@ -24,5 +24,11 @@ async function insertionSort() {
 const insertionSortBtn = document.querySelector(".insertionSort");
 
 insertionSortBtn.addEventListener("click", async ()=> {
+    disableNewArrayBtn();
+    disableSizeSlider();
+    disableSortingBtn();
     await insertionSort();
+    enableNewArrayBtn();
+    enableSizeSlider();
+    enableSortingBtn();
 })

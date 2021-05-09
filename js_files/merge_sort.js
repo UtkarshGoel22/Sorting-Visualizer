@@ -96,5 +96,11 @@ mergeSortBtn.addEventListener("click", async ()=> {
     let arr = document.querySelectorAll(".bar");
     let l = 0;
     let r = parseInt(arr.length)-1;
+    disableNewArrayBtn();
+    disableSizeSlider();
+    disableSortingBtn();
     await mergeSort(arr, l, r);
+    enableNewArrayBtn();
+    enableSizeSlider();
+    enableSortingBtn();
 })

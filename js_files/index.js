@@ -36,12 +36,12 @@ function enableNewArrayBtn() {
 
 // Function to disable size slider during sorting
 function disableSizeSlider() {
-    document.querySelector(".arr_sz").disabled = true;
+    document.querySelector("#arr_sz").disabled = true;
 }
 
 // Function to enable size slider after sorting 
 function enableSizeSlider() {
-    document.querySelector(".arr_sz").disabled = false;
+    document.querySelector("#arr_sz").disabled = false;
 }
 
 // Select array size (slider input) from DOM
