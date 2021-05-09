@@ -2,13 +2,18 @@ async function merge(arr, l, mid, r) {
     // console.log("Inside merge()");
     let n1 = mid - l + 1;
     let n2 = r - mid;
+    // create new arrays left and right of size of n1 & n2 respectively
     let left = new Array(n1);
     let right = new Array(n2);
+    // change color of [l,l+n1) or [l,mid] bars to orange
+    // and add values in left array
     for(let i = 0; i < n1; i++) {
         await waitForMe(delay);
         arr[l+i].style.background = "orange";
         left[i] = arr[l+i].style.height;
     }
+    // change color of [mid+1,r] bars to orange
+    // and add values in right array
     for(let j = 0; j < n2; j++) {
         await waitForMe(delay);
         arr[mid+j+1].style.background = "yellow";
