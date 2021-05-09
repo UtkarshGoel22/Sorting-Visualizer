@@ -1,9 +1,27 @@
-// swap function util for sorting algorithms takes input of 2 DOM elements with .style.height feature
+// Swap function util for sorting algorithms takes input of 2 DOM elements with .style.height feature
 function swap(a, b) {
     // console.log('In swap()');
     let temp = a.style.height;
     a.style.height = b.style.height;
     b.style.height = temp;  
+}
+
+// Function to disable sorting buttons during sorting 
+function disableSortingBtn() {
+    document.querySelector(".selectionSort").disabled = true;
+    document.querySelector(".bubbleSort").disabled = true;
+    document.querySelector(".insertionSort").disabled = true;
+    document.querySelector(".mergeSort").disabled = true;
+    document.querySelector(".quickSort").disabled = true;
+}
+
+// Function to enable sorting buttons after sorting 
+function enableSortingBtn() {
+    document.querySelector(".selectionSort").disabled = false;
+    document.querySelector(".bubbleSort").disabled = false;
+    document.querySelector(".insertionSort").disabled = false;
+    document.querySelector(".mergeSort").disabled = false;
+    document.querySelector(".quickSort").disabled = false;
 }
 
 // Select array size (slider input) from DOM
