@@ -34,7 +34,7 @@ This is a sorting visualization project.
 
 ### Links
 
-- Live Site URL: [Live site URL]()
+- Live Site URL: [Live site URL](https://utkarshgoel22.github.io/Sorting-Visualizer/)
 
 ## My process
 
