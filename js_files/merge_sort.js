@@ -25,9 +25,11 @@ async function merge(arr, l, mid, r) {
         await waitForMe(delay);
         if(parseInt(left[i]) < parseInt(right[j])) {
             if((n1 + n2) === arr.length) {
+                // change the color of kth element to green as the array has become sorted
                 arr[k].style.background = "green";
             }
             else {
+                // change the color of kth element to lightgreen
                 arr[k].style.background = "lightgreen";
             }
             arr[k].style.height = left[i];
@@ -36,9 +38,11 @@ async function merge(arr, l, mid, r) {
         }
         else {
             if((n1 + n2) === arr.length) {
+                // change the color of kth element to green as the array has become sorted
                 arr[k].style.background = "green";
             }
             else {
+                // change the color of kth element to lightgreen
                 arr[k].style.background = "lightgreen";
             }
             arr[k].style.height = right[j];
@@ -48,10 +52,12 @@ async function merge(arr, l, mid, r) {
     }
     while(i < n1) {
         await waitForMe(delay);
-        if((n1 + n2) === arr.length){
+        if((n1 + n2) === arr.length) {
+            // change the color of kth element to green as the array has become sorted
             arr[k].style.background = 'green';
         }
-        else{
+        else {
+            // change the color of kth element to lightgreen
             arr[k].style.background = 'lightgreen';
         }
         arr[k].style.height = left[i];
@@ -60,10 +66,12 @@ async function merge(arr, l, mid, r) {
     }
     while(j < n2) {
         await waitForMe(delay);
-        if((n1 + n2) === arr.length){
+        if((n1 + n2) === arr.length) {
+            // change the color of kth element to green as the array has become sorted
             arr[k].style.background = 'green';
         }
-        else{
+        else {
+            // change the color of kth element to lightgreen
             arr[k].style.background = 'lightgreen';
         }
         arr[k].style.height = right[j];
