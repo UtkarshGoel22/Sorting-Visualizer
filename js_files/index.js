@@ -24,6 +24,26 @@ function enableSortingBtn() {
     document.querySelector(".quickSort").disabled = false;
 }
 
+// Function to disable new Array button during sorting 
+function disableNewArrayBtn() {
+    document.querySelector(".newArray").disabled = true;
+}
+
+// Functon to enble new Array button after sorting 
+function enableNewArrayBtn() {
+    document.querySelector(".newArray").disabled = false;
+}
+
+// Function to disable size slider during sorting
+function disableSizeSlider() {
+    document.querySelector(".arr_sz").disabled = true;
+}
+
+// Function to enable size slider after sorting 
+function enableSizeSlider() {
+    document.querySelector(".arr_sz").disabled = false;
+}
+
 // Select array size (slider input) from DOM
 let arraySize = document.querySelector("#arr_sz");
 
