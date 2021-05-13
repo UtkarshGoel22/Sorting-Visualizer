@@ -4,13 +4,13 @@
 
 Thanks for checking out this repository.
 This is a sorting visualization project.
+- Live Site URL: [Live site URL](https://utkarshgoel22.github.io/Sorting-Visualizer/)
 
 ## Table of contents
 
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
   - [Useful resources](#useful-resources)
@@ -31,10 +31,6 @@ This is a sorting visualization project.
 ![Desktop preview of the Sorting Visualizer during Quick Sort](./screenshots/QuickSort2.png)
 
 ![Desktop preview of the Sorting Visualizer after Quick Sort](./screenshots/QuickSort3.png)
-
-### Links
-
-- Live Site URL: [Live site URL](https://utkarshgoel22.github.io/Sorting-Visualizer/)
 
 ## My process
 
